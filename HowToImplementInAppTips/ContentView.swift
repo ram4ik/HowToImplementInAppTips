@@ -20,6 +20,10 @@ struct SomeTip: Tip {
     var image: Image? {
         Image(systemName: "swift")
     }
+    
+    var options: [TipOption] {
+        Tips.MaxDisplayCount(1)
+    }
 }
 
 struct ContentView: View {
